@@ -21,10 +21,12 @@ public class Controller {
                 "No empiece con db-","Termina con count","2 nombres", "MAC Address","Comience en Mayúscula y termine en Minúscula",
                 "Número Binario de 8 dígitos","Hexadecimal", "Operación de 1 dígito","Número de control (ITSNCG)","CURP",
                 "Cantidad de pesos", "No de tarjeta de crédito", "Etiqueta HTML", "Color Hexadecimal","Link", "Query Insert into de SQL",
-                "Sentencia if", "Frase con salto de linea", "Url con un video de youtube");
+                "Sentencia if", "Frase con salto de linea", "Url con un video de youtube", "Expresión 1", "Expresión 2", "Expresión 3",
+                "Expresión 4", "Expresión 5", "Expresión 6", "Expresión 7");
     }
     public void procesar(ActionEvent event){
         int seleccion=listaEjer.getSelectionModel().getSelectedIndex();
+        String x;
         String texto = txtTexto.getText();
         String expresion ="";
         switch (seleccion){
@@ -85,6 +87,28 @@ public class Controller {
             case 22: {
                 expresion="^https://www[.]youtube[.]com/watch[?]v=([A-Za-z0-9]{1,})";
                 break;}
+            case 23:{
+                expresion="^[a-z0-9_-]{3,16}$";
+                break;}
+            case 24: {
+                expresion="^[a-z0-9-]+$";
+                break;}
+            case 25: {
+                expresion="^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$";
+                break;}
+            case 26: {
+                expresion="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}";
+                break;}
+            case 27: {
+                expresion="[Rr][Gg][Bb][(](((([\\\\d]{1,3})[1,]{0,1})[\\\\s]*){3})[)]";
+                break;}
+            case 28: {
+                expresion="^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$";
+                break;}
+            case 29: {
+                expresion="^[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?),\\s*[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)$";
+                break;}
+
         }
         Pattern patron=Pattern.compile(expresion);
         Matcher matcher=patron.matcher(texto);

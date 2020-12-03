@@ -72,10 +72,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+            <state relative-caret-position="-528">
+              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1731#1803#1" />
+                <element signature="e#1823#1878#1" />
+                <element signature="e#1898#1957#1" />
+                <element signature="e#1977#2047#1" />
+                <element signature="e#2067#2126#1" />
+                <element signature="e#2146#2205#1" />
+                <element signature="e#2225#2300#1" />
+                <element signature="e#2320#2562#1" />
+                <element signature="e#2582#2644#1" />
+                <element signature="e#2664#2711#1" />
+                <element signature="e#2732#2786#1" />
+                <element signature="e#2807#2875#1" />
+                <element signature="e#2896#2975#1" />
+                <element signature="e#2996#3101#1" />
+                <element signature="e#3123#3203#1" />
+                <element signature="e#3225#3331#1" />
+                <element signature="e#3353#3483#1" />
+                <element signature="e#3505#3584#1" />
+                <element signature="e#3606#3713#1" />
+                <element signature="e#3735#3919#1" />
+                <element signature="e#3941#4064#1" />
+                <element signature="e#4086#4196#1" />
+                <element signature="e#4218#4329#1" />
               </folding>
             </state>
           </provider>
@@ -264,6 +287,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.048154093" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -274,7 +298,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -309,7 +333,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/sample/Controller.java</url>
-          <line>25</line>
+          <line>26</line>
           <properties class="sample.Controller" method="procesar">
             <option name="EMULATED" value="true" />
           </properties>
@@ -343,10 +367,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        <state relative-caret-position="-528">
+          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1731#1803#1" />
+            <element signature="e#1823#1878#1" />
+            <element signature="e#1898#1957#1" />
+            <element signature="e#1977#2047#1" />
+            <element signature="e#2067#2126#1" />
+            <element signature="e#2146#2205#1" />
+            <element signature="e#2225#2300#1" />
+            <element signature="e#2320#2562#1" />
+            <element signature="e#2582#2644#1" />
+            <element signature="e#2664#2711#1" />
+            <element signature="e#2732#2786#1" />
+            <element signature="e#2807#2875#1" />
+            <element signature="e#2896#2975#1" />
+            <element signature="e#2996#3101#1" />
+            <element signature="e#3123#3203#1" />
+            <element signature="e#3225#3331#1" />
+            <element signature="e#3353#3483#1" />
+            <element signature="e#3505#3584#1" />
+            <element signature="e#3606#3713#1" />
+            <element signature="e#3735#3919#1" />
+            <element signature="e#3941#4064#1" />
+            <element signature="e#4086#4196#1" />
+            <element signature="e#4218#4329#1" />
           </folding>
         </state>
       </provider>
