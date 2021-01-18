@@ -10,8 +10,9 @@ public class Configs {
             "Cacahuate", "Nuez", "Pistacho", "Albaricoque", "Cereza", "Ciruela", "Higo", "Manzana", "Pera", "Uva", "Aguacate",
             "Coco", "Kiwi", "Mango", "Papaya", "Piña", "Platano", "Melon", "Sandia", "Limon", "Mandarina", "Naranja", "Arandano",
             "Frambuesa", "Fresa", "Grosella", "Zarzamora", "Gramos", "Gramo", "Kilogramos", "Kilogramo", "Rebanada", "Rebanadas",
-            "Gajo", "Gajos", "Diente", "Dientes", "Manojo", "Manojos", "Pieza", "y", "e", "de", "Crear", "lista", ":","medio",
-            "media","Medio", "Media"
+            "Gajo", "Gajos", "Diente", "Dientes", "Manojo", "Manojos", "Pieza", "y", "e", "de", "crear", "lista", ":","medio",
+            "media","Medio", "Media", "print", "declarar", "llevar", "comprar", "vaciar", "carrito", "partir", "comer", "oler",
+            "golpear", "mostrar", "la", "el"
     };
 
     public static final String KEYWORD_PATTERN = "\\b(" + String.join("|", KEYWORDS) + ")\\b";
@@ -32,32 +33,31 @@ public class Configs {
                     + "|(?<COMMENT>" + COMMENT_PATTERN + ")"
     );
     public static final String sampleCode = String.join("\n", new String[] {
-            "Crear lista:",
-            "1 Coco",
-            "Media Lechuga",
-            "18 Melones",
-            "1 Kilogramo de Tomates",
-            "9 y medio Kilogramos de Cebolla",
-            "700 Gramos de Almendra",
-            "15 Rebanadas de Melon",
-            "1 Gajo de Naranja",//jaja la neta lo reconozco, se escucha muy loco
-            "15 Dientes de Ajo",
-            "36 Manojos de Apio",
-            "62 Piezas de Maiz"
+            "print(10)",
+            "declarar x como Apio",
+            //"crear lista: x, x y x",
+            "llevar(x)",
+            "comprar(x)",
+            "partir(x)",
+            "oler(x)",
+            "comer(x)",
+            "golpear(x)",
+            //"vaciar(x) en la bolsa",
+
+
+
     });
     public static String []expresiones={
-        "Crear lista:",
-        "^1 ([A-Z]{1})([a-z]{1,})",
-        "^(Medio|Media) ([A-Z]{1})([a-z]{1,})",
-        "^([0-9]{1,}) ([A-Z]{1})([a-z]{1,})[s]$",
-        "^([0-9]{1,}) (Kilogramo|Kilogramos) de ([A-Z]{1})([a-z]{1,})[s]$",
-        "^([0-9]{1,}) y medio (Kilogramo|Kilogramos) de ([A-Z]{1})([a-z]{1,})",
-        "^([0-9]{1,}) (Gramo|Gramos) de ([A-Z]{1})([a-z]{1,})",
-        "^([0-9]{1,}) (Rebana|Rebanadas) de ([A-Z]{1})([a-z]{1,})",
-        "^([0-9]{1,}) (Gajo|Gajos) de ([A-Z]{1})([a-z]{1,})",
-        "^([0-9]{1,}) (Diente|Dientes) de Ajo",
-        "^([0-9]{1,}) (Manojo|Manojos) de ([A-Z]{1})([a-z]{1,})",
-        "^([0-9]{1,}) (Pieza|Piezas) de ([A-Z]{1})([a-z]{1,})",
+        "print[(][A-Za-z0-9]{1,}[)]",
+        "declarar [A-Za-z]{1,} como (Apio|Perejil)",
+        //"[crear lista:]([A-Za-z]{1,})[, ]([A-Za-z]{1,})[ y ]([A-Za-z]{1,})",
+        "llevar[(][A-Z0-9a-z]{1,}[)]",
+        "comprar[(][A-Z0-9a-z]{1,}[)]",
+        "partir[(][A-Z0-9a-z]{1,}[)]",
+        "oler[(][A-Z0-9a-z]{1,}[)]",
+        "comer[(][0-9A-Za-z]{1,}[)]",
+        "golpear[(][A-Za-z]{1,}[)]",
+        //"vaciar[(][0-9A-Za-z]{1,}[)][ en ]([la bolsa]|[el carrito])"
     };
 
 }
