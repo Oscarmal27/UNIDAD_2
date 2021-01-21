@@ -49,7 +49,11 @@ public class Configs {
     });
     public static String []expresiones={
         "print[(][A-Za-z0-9]{1,}[)]",
-        "declarar [A-Za-z]{1,} como (Apio|Perejil)",
+        "declarar [A-Za-z]{1,} como (Apio|Perejil|Zanahoria|Berenjena|Patata|Pimiento|Tomate|Acelga|Espinaca|Remolacha|Ajo|Cebolla|" +
+                "Espárrago|Puerro|Lechuga|Perejil|Champiñon|Maiz|Guisante|Haba|Judia Verde|Calabacín|Calabaza|Pepino|Alcachofa|Brocoli|" +
+                "Col|Coliflor|Rabano|Almendra|Avellana|Cacahuate|Nuez|Pistacho|Albaricoque|Cereza|Ciruela|Higo|Manzana|Pera|Uva|" +
+                "Aguacate|Coco|Kiwi|Mango|Papaya|Pina|Platano|Melon|Sandia|Limon|Mandarina|Naranja|Arandano|Frambuesa|Fresa|Grosella|" +
+                "Zarzamora)",
         //"[crear lista:]([A-Za-z]{1,})[, ]([A-Za-z]{1,})[ y ]([A-Za-z]{1,})",
         "llevar[(][A-Z0-9a-z]{1,}[)]",
         "comprar[(][A-Z0-9a-z]{1,}[)]",
